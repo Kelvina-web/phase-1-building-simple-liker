@@ -4,8 +4,13 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-
-
+// Ensure the modal element is properly selected
+const modal = document.querySelector('#modal');
+if (modal) {
+  modal.classList.add('hidden'); // Ensure the modal is hidden initially
+} else {
+  console.error('Modal element not found');
+}
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
